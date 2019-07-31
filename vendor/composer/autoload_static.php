@@ -15,6 +15,10 @@ class ComposerStaticInit48db9ba98b6449d2ae6cab76743a770f
     );
 
     public static $prefixLengthsPsr4 = array (
+        'u' => 
+        array (
+            'unis\\' => 5,
+        ),
         't' => 
         array (
             'think\\view\\driver\\' => 18,
@@ -49,6 +53,10 @@ class ComposerStaticInit48db9ba98b6449d2ae6cab76743a770f
     );
 
     public static $prefixDirsPsr4 = array (
+        'unis\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/unislib',
+        ),
         'think\\view\\driver\\' => 
         array (
             0 => __DIR__ . '/..' . '/topthink/think-view/src',
