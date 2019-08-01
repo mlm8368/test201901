@@ -76,7 +76,7 @@ class ComposerStaticInit48db9ba98b6449d2ae6cab76743a770f
         ),
         'app\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/unisweb',
+            0 => __DIR__ . '/../..' . '/app',
         ),
         'Symfony\\Polyfill\\Php72\\' => 
         array (
