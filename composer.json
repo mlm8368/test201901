@@ -26,8 +26,9 @@
     },
     "autoload": {
         "psr-4": {
-            "app\\": "app",
-            "unis\\": "unislib"
+            "app\\": "unisweb",
+            "unis\\": "unislib",
+            "unis\\api\\": "unisapi"
         },
         "psr-0": {
             "": "extend/"

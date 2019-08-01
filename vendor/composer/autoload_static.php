@@ -17,6 +17,7 @@ class ComposerStaticInit48db9ba98b6449d2ae6cab76743a770f
     public static $prefixLengthsPsr4 = array (
         'u' => 
         array (
+            'unis\\api\\' => 9,
             'unis\\' => 5,
         ),
         't' => 
@@ -53,6 +54,10 @@ class ComposerStaticInit48db9ba98b6449d2ae6cab76743a770f
     );
 
     public static $prefixDirsPsr4 = array (
+        'unis\\api\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/unisapi',
+        ),
         'unis\\' => 
         array (
             0 => __DIR__ . '/../..' . '/unislib',
@@ -71,7 +76,7 @@ class ComposerStaticInit48db9ba98b6449d2ae6cab76743a770f
         ),
         'app\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/app',
+            0 => __DIR__ . '/../..' . '/unisweb',
         ),
         'Symfony\\Polyfill\\Php72\\' => 
         array (
