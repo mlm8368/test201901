@@ -1,10 +1,10 @@
 <?php
-namespace app\collect\controller;
+namespace unis\app\collect\controller;
 
 use think\App;
-use unis\app\collect\controller\Index as UnisIndex;
+use app\BaseController;
 
-class Index extends UnisIndex
+class Index extends BaseController
 {
     /**
      * 构造方法
@@ -18,8 +18,9 @@ class Index extends UnisIndex
 
     public function index($name)
     {
-      $data = parent::index($name);
-      $res = 'adddd-'.$name.$data;
-      return $res;
+      $res = 'adddd-'.$name;
+      $str = testUnisCommon();
+      $url = url('index/index',['name'=>'eeeee']);
+      return $res.$url.$str;
     }
 }
