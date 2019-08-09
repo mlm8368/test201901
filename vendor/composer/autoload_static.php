@@ -17,6 +17,7 @@ class ComposerStaticInit48db9ba98b6449d2ae6cab76743a770f
     public static $prefixLengthsPsr4 = array (
         'u' => 
         array (
+            'unis\\app\\collect\\controller\\' => 28,
             'unis\\app\\' => 9,
             'unis\\' => 5,
         ),
@@ -27,6 +28,7 @@ class ComposerStaticInit48db9ba98b6449d2ae6cab76743a770f
         ),
         'a' => 
         array (
+            'app\\collect\\controller\\' => 23,
             'app\\' => 4,
         ),
         'S' => 
@@ -54,6 +56,10 @@ class ComposerStaticInit48db9ba98b6449d2ae6cab76743a770f
     );
 
     public static $prefixDirsPsr4 = array (
+        'unis\\app\\collect\\controller\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/unisapp/collect/controller',
+        ),
         'unis\\app\\' => 
         array (
             0 => __DIR__ . '/../..' . '/unisapp',
@@ -73,6 +79,10 @@ class ComposerStaticInit48db9ba98b6449d2ae6cab76743a770f
             2 => __DIR__ . '/..' . '/topthink/think-helper/src',
             3 => __DIR__ . '/..' . '/topthink/think-orm/src',
             4 => __DIR__ . '/..' . '/topthink/think-template/src',
+        ),
+        'app\\collect\\controller\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app/collect/controller',
         ),
         'app\\' => 
         array (

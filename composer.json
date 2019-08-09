@@ -27,8 +27,10 @@
     "autoload": {
         "psr-4": {
             "app\\": "app",
+            "app\\collect\\controller\\": "app/collect/controller",
             "unis\\": "unislib",
-            "unis\\app\\": "unisapp"
+            "unis\\app\\": "unisapp",
+            "unis\\app\\collect\\controller\\": "unisapp/collect/controller"
         },
         "psr-0": {
             "": "extend/"

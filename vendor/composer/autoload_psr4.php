@@ -6,10 +6,12 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'unis\\app\\collect\\controller\\' => array($baseDir . '/unisapp/collect/controller'),
     'unis\\app\\' => array($baseDir . '/unisapp'),
     'unis\\' => array($baseDir . '/unislib'),
     'think\\view\\driver\\' => array($vendorDir . '/topthink/think-view/src'),
     'think\\' => array($vendorDir . '/topthink/framework/src/think', $vendorDir . '/topthink/think-container/src', $vendorDir . '/topthink/think-helper/src', $vendorDir . '/topthink/think-orm/src', $vendorDir . '/topthink/think-template/src'),
+    'app\\collect\\controller\\' => array($baseDir . '/app/collect/controller'),
     'app\\' => array($baseDir . '/app'),
     'Symfony\\Polyfill\\Php72\\' => array($vendorDir . '/symfony/polyfill-php72'),
     'Symfony\\Polyfill\\Mbstring\\' => array($vendorDir . '/symfony/polyfill-mbstring'),
