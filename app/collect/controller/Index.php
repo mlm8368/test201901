@@ -7,6 +7,8 @@ class Index extends BaseController
 {
     public function index($name)
     {
-      return 'adddd-'.$name;
+      $res = 'adddd-'.$name;
+      $url = url('index/index',['name'=>'eeeee']);
+      return $res.$url;
     }
 }
