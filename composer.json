@@ -28,7 +28,7 @@
         "psr-4": {
             "app\\": "app",
             "unis\\": "unislib",
-            "unis\\api\\": "unisapi"
+            "unis\\app\\": "unisapp"
         },
         "psr-0": {
             "": "extend/"

@@ -6,7 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'unis\\api\\' => array($baseDir . '/unisapi'),
+    'unis\\app\\' => array($baseDir . '/unisapp'),
     'unis\\' => array($baseDir . '/unislib'),
     'think\\view\\driver\\' => array($vendorDir . '/topthink/think-view/src'),
     'think\\' => array($vendorDir . '/topthink/framework/src/think', $vendorDir . '/topthink/think-container/src', $vendorDir . '/topthink/think-helper/src', $vendorDir . '/topthink/think-orm/src', $vendorDir . '/topthink/think-template/src'),
