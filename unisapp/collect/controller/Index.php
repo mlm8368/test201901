@@ -23,4 +23,8 @@ class Index extends BaseController
       $url = url('index/index',['name'=>'eeeee']);
       return $res.$url.$str;
     }
+
+    public function testgraphql(){
+      return ['schemaTypes'=>[],'ddd','fff'];
+    }
 }

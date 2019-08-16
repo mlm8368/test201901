@@ -15,3 +15,4 @@ Route::get('think', function () {
 });
 
 Route::get('index/:name', 'index/index');
+Route::get('testgraphql/:id', 'index/testgraphql');
