@@ -1,7 +1,5 @@
 <?php
-use think\Container;
+$app = app();
 
-$container = Container::getInstance();
-
-include_once $container->getRootPath() . 'unisapp/' . $container->make('request')->app() . '/common.php';
+include_once $app->getRootPath() . 'unisapp/' . $app->make('request')->app() . '/common.php';
 // 应用公共文件
