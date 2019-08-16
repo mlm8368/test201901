@@ -8,12 +8,9 @@
 // +----------------------------------------------------------------------
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
+namespace unis\app;
 
-// use app\Request;
-// use app\ExceptionHandle;
-
-// 容器Provider定义文件
-return array_merge(include $this->rootPath . 'unisapp/provider.php',[
-  // 'think\Request'          => Request::class,
-  // 'think\exception\Handle' => ExceptionHandle::class,
-]);
+class Request extends \think\Request
+{
+  
+}

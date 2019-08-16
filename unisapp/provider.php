@@ -9,11 +9,11 @@
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
 
-// use app\Request;
-// use app\ExceptionHandle;
+use unis\app\Request;
+use unis\app\ExceptionHandle;
 
 // 容器Provider定义文件
-return array_merge(include $this->rootPath . 'unisapp/provider.php',[
-  // 'think\Request'          => Request::class,
-  // 'think\exception\Handle' => ExceptionHandle::class,
-]);
+return [
+  'think\Request'          => Request::class,
+  'think\exception\Handle' => ExceptionHandle::class,
+];

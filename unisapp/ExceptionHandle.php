@@ -9,7 +9,7 @@
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
 
-namespace app;
+namespace unis\app;
 
 use think\db\exception\DataNotFoundException;
 use think\db\exception\ModelNotFoundException;
