@@ -3,6 +3,4 @@
 // | 应用设置
 // +----------------------------------------------------------------------
 
-$app = app();
-
-return array_merge(include $app->getRootPath() . 'unisapp/' . $app->make('request')->app() . '/config/app.php',[]);
+return array_merge(include root_path() . 'unisapp/' . app('request')->app() . '/config/app.php',[]);
