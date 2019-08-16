@@ -53,6 +53,10 @@ class ComposerStaticInit48db9ba98b6449d2ae6cab76743a770f
             'League\\Flysystem\\Cached\\' => 24,
             'League\\Flysystem\\' => 17,
         ),
+        'G' => 
+        array (
+            'GraphQL\\' => 8,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -127,6 +131,10 @@ class ComposerStaticInit48db9ba98b6449d2ae6cab76743a770f
         'League\\Flysystem\\' => 
         array (
             0 => __DIR__ . '/..' . '/league/flysystem/src',
+        ),
+        'GraphQL\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/webonyx/graphql-php/src',
         ),
     );
 
