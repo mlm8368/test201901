@@ -1,6 +1,6 @@
 <?php
 
-return array_merge(include $this->app->getRootPath() . 'unisapp/middleware.php',[
+return [
     // 全局请求缓存
     // \think\middleware\CheckRequestCache::class,
     // 多语言加载
@@ -9,4 +9,4 @@ return array_merge(include $this->app->getRootPath() . 'unisapp/middleware.php',
     // \think\middleware\SessionInit::class,
     // 页面Trace调试
     // \think\middleware\TraceDebug::class,
-]);
+];

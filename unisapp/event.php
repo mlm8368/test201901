@@ -10,7 +10,7 @@
 // +----------------------------------------------------------------------
 
 // 事件定义文件
-return array_merge_recursive(include $this->app->getRootPath() . 'unisapp/event.php',[
+return [
     'bind'      => [
     ],
 
@@ -24,4 +24,4 @@ return array_merge_recursive(include $this->app->getRootPath() . 'unisapp/event.
 
     'subscribe' => [
     ],
-]);
+];
