@@ -9,7 +9,7 @@
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
 
-// 事件定义文件
+// 事件定义文件，追加操作
 return array_merge_recursive(include $this->app->getRootPath() . 'unisapp/event.php',[
     'bind'      => [
     ],
