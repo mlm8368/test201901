@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'unis\\graphql\\' => array($baseDir . '/unisgraphql'),
     'unis\\app\\collect\\controller\\' => array($baseDir . '/unisapp/collect/controller'),
     'unis\\app\\' => array($baseDir . '/unisapp'),
     'unis\\' => array($baseDir . '/unislib'),

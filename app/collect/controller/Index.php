@@ -2,9 +2,8 @@
 namespace app\collect\controller;
 
 use think\App;
+use unis\app\Request;
 use unis\app\collect\controller\Index as UnisIndex;
-use GraphQL\Type\Schema;
-use GraphQL\GraphQL;
 
 class Index extends UnisIndex
 {
@@ -25,12 +24,9 @@ class Index extends UnisIndex
       return $res;
     }
 
-    public function testgraphql($id){
-      $data = parent::testgraphql($id);
+    public function testgraphql(Request $request){
+      $data = parent::testgraphql($request);
 
-      $schema = new Schema($data['schemaTypes']);
-      $output = GraphQL::executeQuery($schema, $query, $rootValue, [], $variables)->toArray(input('?debug'));
-
-      return json($output);
+      return json($data['graphql']);
     }
 }

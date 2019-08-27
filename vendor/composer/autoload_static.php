@@ -17,6 +17,7 @@ class ComposerStaticInit48db9ba98b6449d2ae6cab76743a770f
     public static $prefixLengthsPsr4 = array (
         'u' => 
         array (
+            'unis\\graphql\\' => 13,
             'unis\\app\\collect\\controller\\' => 28,
             'unis\\app\\' => 9,
             'unis\\' => 5,
@@ -60,6 +61,10 @@ class ComposerStaticInit48db9ba98b6449d2ae6cab76743a770f
     );
 
     public static $prefixDirsPsr4 = array (
+        'unis\\graphql\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/unisgraphql',
+        ),
         'unis\\app\\collect\\controller\\' => 
         array (
             0 => __DIR__ . '/../..' . '/unisapp/collect/controller',

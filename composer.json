@@ -31,6 +31,7 @@
             "app\\collect\\controller\\": "app/collect/controller",
             "unis\\": "unislib",
             "unis\\app\\": "unisapp",
+            "unis\\graphql\\": "unisgraphql",
             "unis\\app\\collect\\controller\\": "unisapp/collect/controller"
         },
         "psr-0": {
