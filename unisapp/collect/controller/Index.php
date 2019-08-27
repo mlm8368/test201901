@@ -26,7 +26,7 @@ class Index extends BaseController
 
     public function index($name)
     {
-      session('userid', 'thinkphp7867');
+      session('userid', 'dddd');
       $res = 'adddd-'.$name;
       $str = testUnisCommon();
       $url = url('index/index',['name'=>'eeeee']);
