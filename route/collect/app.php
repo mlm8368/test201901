@@ -16,3 +16,4 @@ Route::get('think', function () {
 
 Route::get('index/:name', 'index/index');
 Route::post('testgraphql', 'index/testgraphql');
+Route::get('testdb/:id', 'index/testdb');

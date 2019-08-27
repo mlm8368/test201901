@@ -2,13 +2,13 @@
 namespace unis\app\collect\controller;
 
 use think\App;
-use unis\app\Request;
 use app\BaseController;
 use GraphQL\Type\Schema;
 use GraphQL\Type\Definition\ResolveInfo;
 use GraphQL\GraphQL;
 use unis\graphql\Support\Types;
 use unis\graphql\Support\ObjectType;
+use think\facade\Db;
 
 
 class Index extends BaseController
@@ -33,7 +33,7 @@ class Index extends BaseController
       return $res.$url.$str;
     }
 
-    public function testgraphql(Request $request){
+    public function testgraphql(){
       $result = ['data'=>[],'graphql'=>''];
 
       $result['data'] = ['id'=>1,'nickname'=>'sss','created_time'=>'2018-09-01 23:08:00'];
@@ -59,9 +59,15 @@ class Index extends BaseController
         ]);
         $schemaTypes = ['query' => $query];
         $schema = new Schema($schemaTypes);
-        $result['graphql'] = GraphQL::executeQuery($schema, $request->post('query'), [], [], $request->post('variables'))->toArray();
+        $result['graphql'] = GraphQL::executeQuery($schema, $this->request->post('query'), [], [], $this->request->post('variables'))->toArray();
       }
 
       return $result;
+    }
+
+    public function testdb($id=0){
+      $list = Db::table('sx_check_record')->where('id', 1)->find();
+      // var_dump($list);
+      return $list;
     }
 }

@@ -2,7 +2,6 @@
 namespace app\collect\controller;
 
 use think\App;
-use unis\app\Request;
 use unis\app\collect\controller\Index as UnisIndex;
 
 class Index extends UnisIndex
@@ -24,9 +23,15 @@ class Index extends UnisIndex
       return $res;
     }
 
-    public function testgraphql(Request $request){
-      $data = parent::testgraphql($request);
+    public function testgraphql(){
+      $data = parent::testgraphql();
 
       return json($data['graphql']);
+    }
+
+    public function testdb($id=0){
+      $data = parent::testdb($id);
+
+      return response(print_r($data,true));
     }
 }
