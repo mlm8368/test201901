@@ -46,6 +46,14 @@ abstract class UnisController
     protected $middleware = [];
 
     /**
+     * graphql
+     *
+     * @var array
+     */
+    protected $mutationType = [];
+    protected $queryType = [];
+
+    /**
      * 构造方法
      * @access public
      * @param  App  $app  应用对象

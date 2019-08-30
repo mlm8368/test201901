@@ -1,5 +1,5 @@
 <?php
-namespace unis\app\collect\controller;
+namespace unis\app\api\controller;
 
 use think\App;
 use app\BaseController;
@@ -11,7 +11,7 @@ use unis\graphql\Support\ObjectType;
 use think\facade\Db;
 
 
-class Index extends BaseController
+class Query extends BaseController
 {
     protected $isGraphql = 1;
     /**
@@ -24,16 +24,8 @@ class Index extends BaseController
         parent::__construct($app);
     }
 
-    public function index($name)
+    public function main($action='multiple')
     {
-      session('userid', 'dddd');
-      $res = 'adddd-'.$name;
-      $str = testUnisCommon();
-      $url = url('index/index',['name'=>'eeeee']);
-      return $res.$url.$str;
-    }
-
-    public function testgraphql(){
       $result = ['data'=>[],'graphql'=>''];
 
       $result['data'] = ['id'=>1,'nickname'=>'sss','created_time'=>'2018-09-01 23:08:00'];
@@ -74,11 +66,5 @@ class Index extends BaseController
       }
 
       return $result;
-    }
-
-    public function testdb($id=0){
-      $list = Db::table('sx_check_record')->where('id', 1)->find();
-      // var_dump($list);
-      return $list;
     }
 }
